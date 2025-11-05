@@ -9,7 +9,7 @@ const ThemeToggle = () => {
     const { setTheme } = useTheme()
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger>
+            <DropdownMenuTrigger asChild>
                 <Button variant={'ghost'} size={'icon'}>
                     <Moon className='scale-0 dark:scale-100'></Moon>
                     <Sun className='scale-100 dark:scale-0 absolute'></Sun>

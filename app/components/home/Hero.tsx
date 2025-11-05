@@ -7,9 +7,9 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <div className=' text-center container-center mx-auto py-24 space-y-12'>
-            <div className='space-y-5'>
-                <h1 className='text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl'>Collaborate smarter. <br />
+        <div className=' text-center container-center mx-auto py-24 space-y-16 md:py-32   '>
+            <div className='space-y-6'>
+                <h1 className='text-4xl font-semibold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl '>Collaborate smarter. <br />
                     <span className='text-primary'>Deliver faster </span>
                 </h1>
                 <p className='max-w-[700px] text-lg text-muted-foreground sm:text-xl mx-auto'>
@@ -30,8 +30,8 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className='shadow-xl bg-white rounded-md p-4'>
-                <img className='border border-gray-100 rounded-md' src="/dashboard.png" alt="" />
+            <div className='shadow-xl bg-white rounded-md p-4 mx-auto max-w-4xl'>
+                <img className='border border-gray-100 rounded-md ' src="/dashboard.png" alt="" />
             </div>
         </div>
     );
