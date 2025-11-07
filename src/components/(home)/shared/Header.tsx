@@ -16,13 +16,13 @@ const Header = () => {
           />
           <h2 className="text-2xl font-bold"> Collabify </h2>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center gap-4">
           {/*todo: i will separte this later as a standalone components */}
 
           <ThemeToggle />
 
-          <Button variant={"ghost"}>Log in </Button>
-          <Button>Get started</Button>
+          <Button variant={"outline"}>Log in </Button>
+          <Button className="hidden sm:block">Get started</Button>
         </div>
       </div>
     </header>

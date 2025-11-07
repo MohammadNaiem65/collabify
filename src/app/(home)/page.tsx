@@ -5,7 +5,7 @@ import Pricing from "@/components/(home)/home/PricingSection";
 
 const Homepage = () => {
   return (
-    <div>
+    <div className="mx-4 md:mx-8">
       <Hero />
       <Features/>
       <Pricing/>
