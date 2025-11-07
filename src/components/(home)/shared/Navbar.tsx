@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import ThemeToggle from "../../shared/ThemeToggler";
 
-const Header = () => {
+const Navbar = () => {
   return (
-    <header className="sticky top-0 border-b border-gray-200 bg-background/30 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-900/60 dark:text-white">
+    <nav className="sticky top-0 border-b border-gray-200 bg-background/30 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-900/60 dark:text-white">
       <div className="container-center flex items-center justify-between py-4">
         <div className="flex items-center gap-4">
           <Image
@@ -16,17 +16,17 @@ const Header = () => {
           />
           <h2 className="text-2xl font-bold"> Collabify </h2>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center gap-4">
           {/*todo: i will separte this later as a standalone components */}
 
           <ThemeToggle />
 
-          <Button variant={"ghost"}>Log in </Button>
-          <Button>Get started</Button>
+          <Button variant={"outline"}>Log in </Button>
+          <Button className="hidden sm:block">Get started</Button>
         </div>
       </div>
-    </header>
+    </nav>
   );
 };
 
-export default Header;
+export default Navbar;

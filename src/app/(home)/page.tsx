@@ -1,9 +1,15 @@
+import CTASection from "@/components/(home)/home/CallToAction";
+import Features from "@/components/(home)/home/Features";
 import Hero from "@/components/(home)/home/Hero";
+import Pricing from "@/components/(home)/home/PricingSection";
 
 const Homepage = () => {
   return (
-    <div>
+    <div className="mx-4 md:mx-8">
       <Hero />
+      <Features/>
+      <Pricing/>
+      <CTASection/>
     </div>
   );
 };

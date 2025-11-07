@@ -6,9 +6,9 @@ export default function Footer() {
   return (
     <footer className="border-t bg-background">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 justify-between gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-2 justify-start gap-8 md:grid-cols-4 *:px-4">
           {/* Brand Section */}
-          <div className="space-y-4">
+          <div className="space-y-4 col-span-2 md:col-span-1">
             <div className="flex items-center space-x-2">
               <Image
                 className="size-8"
@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
 
           {/* Product Links */}
-          <div className="space-y-4 justify-self-center">
+          <div className="space-y-4 justify-self-start md:justify-self-end">
             <h3 className="font-semibold">Product</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
 
           {/* Company Links */}
-          <div className="space-y-4 justify-self-center">
+          <div className="space-y-4 justify-self-start md:justify-self-end">
             <h3 className="font-semibold">Company</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
@@ -103,7 +103,7 @@ export default function Footer() {
           </div>
 
           {/* Legal Links */}
-          <div className="space-y-4 justify-self-center">
+          <div className="space-y-4 justify-self-start md:justify-self-end">
             <h3 className="font-semibold">Legal</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
