@@ -1,7 +1,6 @@
 import Footer from "@/components/(home)/shared/Footer";
-import Header from "../../components/(home)/shared/Navbar";
-import "../globals.css";
 import Navbar from "../../components/(home)/shared/Navbar";
+import "../globals.css";
 
 export default function HomeLayout({
   children,

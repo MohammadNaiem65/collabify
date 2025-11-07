@@ -1,12 +1,10 @@
-"use client";
-
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../../ui/button";
 
 export default function CTASection() {
   return (
-    <section className="container mx-auto py-24 md:py-32">
+    <section className="container-center py-24 md:py-32">
       <div className="flex flex-col items-center gap-4 rounded-xl border bg-card p-12 text-center shadow-lg">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           Ready to get started?

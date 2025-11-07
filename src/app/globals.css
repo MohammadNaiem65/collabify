@@ -121,6 +121,6 @@
   }
 }
 
-@utility container-center{
-    @apply mx-auto container px-4 sm:px-6 lg:px-8;
+@utility container-center {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8;
 }

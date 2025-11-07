@@ -1,17 +1,16 @@
-"use client";
-
+import { Button } from "@/components/ui/button";
+import { pricing } from "@/constants";
+import { cn } from "@/lib/utils";
 import { CheckCircle } from "lucide-react";
-
 import Link from "next/link";
-import { Button } from "../../ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "../../ui/card";
-import {pricing} from '@/constants'
 
 export default function Pricing() {
   return (
@@ -30,9 +29,10 @@ export default function Pricing() {
         {pricing.map((plan) => (
           <div key={plan.name}>
             <Card
-              className={`h-full ${
-                plan.popular ? "border-primary shadow-lg" : ""
-              }`}
+              className={cn(
+                "flex h-full flex-col justify-between",
+                plan.popular ? "border-primary shadow-lg" : "",
+              )}
             >
               <CardHeader>
                 {plan.popular && (
@@ -47,6 +47,7 @@ export default function Pricing() {
                   <span className="text-muted-foreground">/month</span>
                 </div>
               </CardHeader>
+
               <CardContent>
                 <ul className="mb-6 space-y-3">
                   {plan.features.map((feature) => (
@@ -56,7 +57,10 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <Link href="/register">
+              </CardContent>
+
+              <CardFooter>
+                <Link href="/register" className="inline-block w-full">
                   <Button
                     className="w-full"
                     variant={plan.popular ? "default" : "outline"}
@@ -64,7 +68,7 @@ export default function Pricing() {
                     Get Started
                   </Button>
                 </Link>
-              </CardContent>
+              </CardFooter>
             </Card>
           </div>
         ))}

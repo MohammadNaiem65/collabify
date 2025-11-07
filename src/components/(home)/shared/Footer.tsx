@@ -5,10 +5,10 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="border-t bg-background">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-2 justify-start gap-8 md:grid-cols-4 *:px-4">
+      <div className="container-center px-4 py-12">
+        <div className="grid grid-cols-2 justify-start gap-8 *:px-4 md:grid-cols-4">
           {/* Brand Section */}
-          <div className="space-y-4 col-span-2 md:col-span-1">
+          <div className="col-span-2 space-y-4 md:col-span-1">
             <div className="flex items-center space-x-2">
               <Image
                 className="size-8"

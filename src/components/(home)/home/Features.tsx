@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Bot,
   Calendar,
@@ -8,7 +6,7 @@ import {
   MessageSquare,
   Users,
   Zap,
-} from "lucide-react"; 
+} from "lucide-react";
 import { Card, CardDescription, CardHeader, CardTitle } from "../../ui/card";
 
 export type Feature = {
@@ -55,7 +53,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="container mx-auto py-24 md:py-32">
+    <section className="container-center py-24 md:py-32">
       <div className="mb-16 flex flex-col items-center gap-4 text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           Everything you need to succeed
@@ -68,10 +66,7 @@ export default function Features() {
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {features.map((feature, index) => (
-          <div
-            key={feature.title}
-             
-          >
+          <div key={index}>
             <Card className="h-full transition-shadow hover:shadow-lg">
               <CardHeader>
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
