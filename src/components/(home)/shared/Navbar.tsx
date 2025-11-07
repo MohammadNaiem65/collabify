@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import ThemeToggle from "../../shared/ThemeToggler";
 
-const Header = () => {
+const Navbar = () => {
   return (
-    <header className="sticky top-0 border-b border-gray-200 bg-background/30 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-900/60 dark:text-white">
+    <nav className="sticky top-0 border-b border-gray-200 bg-background/30 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-900/60 dark:text-white">
       <div className="container-center flex items-center justify-between py-4">
         <div className="flex items-center gap-4">
           <Image
@@ -25,8 +25,8 @@ const Header = () => {
           <Button className="hidden sm:block">Get started</Button>
         </div>
       </div>
-    </header>
+    </nav>
   );
 };
 
-export default Header;
+export default Navbar;
