@@ -11,7 +11,7 @@ export default function HomeLayout({
     <div className="">
       <Header />
 
-      <main className="h-[calc(100vh-25.75rem)]">{children}</main>
+      <main className="min-h-[calc(100vh-25.75rem)]">{children}</main>
 
       <Footer />
     </div>

@@ -2,9 +2,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import heroImg from "./dashboard.png";
 
-const Hero = () => {
+const Hero = () => {    
   return (
     <div className="container-center mx-auto space-y-16 py-24 text-center md:py-32">
       <div className="space-y-6">
@@ -34,9 +33,10 @@ const Hero = () => {
       <div className="mx-auto max-w-4xl rounded-md bg-white p-4 shadow-xl">
         <Image
           className="rounded-md border border-gray-100"
-          src={heroImg}
+          src="/dashboard.png"
           alt="hero image"
           width={896}
+          height={504}
         />
       </div>
     </div>
