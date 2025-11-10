@@ -19,5 +19,6 @@
   "[json]": {
     "editor.tabSize": 4
   },
-  "prettify-ts.typeIndentation": 4
+  "prettify-ts.typeIndentation": 4,
+  "cSpell.words": ["cmdk"]
 }

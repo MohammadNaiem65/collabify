@@ -9,7 +9,7 @@ const Header = () => {
         <div className="flex items-center gap-4">
           <Image
             className="size-8"
-            src="/favicon.png"
+            src="/logo.png"
             alt="collabify logo"
             width={32}
             height={32}

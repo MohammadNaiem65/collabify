@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Hero = () => {    
+const Hero = () => {
   return (
     <div className="container-center mx-auto space-y-16 py-24 text-center md:py-32">
       <div className="space-y-6">
